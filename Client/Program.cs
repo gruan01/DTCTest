@@ -39,7 +39,7 @@ namespace Client {
                 Console.WriteLine("{0}", g);
 
                 var rst = client.PostAsJsonAsync("http://localhost:19377/api/Test", new Test() {
-                    Name = Guid.NewGuid().ToString(),
+                    Name = g,
                     CreatedOn = DateTime.Now
                 }).Result;
 
